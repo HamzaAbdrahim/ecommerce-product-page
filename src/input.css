@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cart-menu {
+    filter: drop-shadow(2px 4px 6px black);
+    z-index: 99;
+}
+
+:root {
+--Orange: hsl(26, 100%, 55%);
+--Paleorange: hsl(25, 100%, 94%);
+--Verydark-blue: hsl(220, 13%, 13%);
+--Darkgrayish-blue: hsl(219, 9%, 45%);
+--Grayishblue: hsl(220, 14%, 75%);
+--Lightgrayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black : hsl(0, 0%, 0%);
+}
+@media (min-width: 900px) {
+    .cart-menu {
+        width: 23rem;
+        background-color: white;
+        left: 78%;
+        top: 8%;
+    }
+}
+
+.previous,
+.next,
+.next-light,
+.previous-light {
+    border-radius: 50%;
+    cursor: pointer;
+}
+.plus,
+.minus,
+.button,
+.cart > img,
+.slider img,
+.change-img img
+ {
+    cursor: pointer;
+}
+
+.slider img:hover {
+    opacity: 0.5;
+}
+.previous {
+    margin-left: 1.25rem;
+}
+
+
+.active {
+    opacity: 1;
+}
+.titel {
+    margin: 1rem 0 ;
+}
+
+.discption > span {
+    color: var(--Orange);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.discption .pargraf {
+    color: var(--Darkgrayish-blue);
+    font-size: 1.25rem;
+    width: 25rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.discption .price {
+    margin-top:2rem;
+}
+.discption .price span {
+    background-color: hsla(26, 100%, 55%, 0.305);
+    color: var(--Orange);
+    font-weight: bold;
+    border-radius: 0.258em;
+    width: 2.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 1.5rem;
+}
+.discption .price p {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: var(--Grayishblue);
+}
+
+
+.discption .count {
+    margin:2rem 0 ;
+}
+.galery-container {
+    margin: 1rem 0 ;
+}
+@media (min-width: 768px) {
+    .galery-container {
+        gap: 6.25rem;
+        align-items: center;
+    }
+    .discption > span {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: .10rem;
+    }
+    .titel {
+        font-size: 2.5rem; 
+        margin-bottom: 2rem;
+    }
+    .discption .pargraf {
+        font-size: 1em;
+    }
+    .discption .price p {
+        font-size: 1rem;
+        display: block;
+    }
+    .holder {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .count {
+        gap: 3rem;
+    }
+    .button {
+        padding: 0.75rem 4rem;
+    }
+    .word {
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .galery-container {
+        flex-direction: row;
+    }
+    header {
+        justify-content: space-around;
+    }
+}
+li::after {
+    content: '';
+    background-color: var(--Orange);
+    width: 0;
+    height: 4px;
+    position: relative;
+    left: 0;
+    bottom: -42px;
+    display: block;
+    transition: .5s;
+}
+
+nav ul li:hover::after {
+    display: block;
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+.items {
+    border-top-left-radius: 49%;
+    border-top-right-radius: 21%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    font-size: 1em;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    margin-bottom: -3px;
+    opacity: 0;
+}
+@media (max-width:768px) {
+    .items {
+    top: 10px;
+    right: 73px;
+    }
+    li::after {
+        opacity: 0;
+    }
+    .nav {
+        height: 165vh;
+        left: -15rem;
+        transition: ease-in-out .5s;
+    }
+   
+}
+@media (max-width: 1024px) {
+    header {
+        justify-content: space-between;
+    }
+}
+.changed span {
+    font-weight: bold;
+    color: var(--Black);
+}
+
+.hi {
+    top: 33px;
+    opacity: 1;
+}
+
+.humberger {
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.navside.list {
+    opacity: 1;
+}
+.navside.list .nav {
+    left: 0;
+}
+
+.close_list {
+    cursor: pointer;
+}
+
+.back {
+    left: -15rem;
+}
+.youare {
+    border: 3px solid var(--Orange);
+    opacity: 0.5;
+}
+
+.light-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(0 0 0 / 80%);
+}
+
+/* .next,
+.previous {
+    z-index: 10;
+    position: absolute;
+} */
+
+.theOne {
+    width: 100%;
+    display: block;
+}
+
+.light-box-close {
+    height: 1.50rem;
+    cursor: pointer;
+    margin-right: -20rem;
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+    transition: .45s;
+    background-color: rgb(255 125 26 / 52%);
+}
+
+.main-img:hover {
+    border: 5px dotted var(--Orange);
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 50%;
+}

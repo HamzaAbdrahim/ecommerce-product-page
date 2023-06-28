@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../main/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>E-commerce product page</title>
+</head>
+<body>
+  <div class="container:lg h-screen w-full max-w-2xl ">
+    <header class="w-full h-16 flex items-center px-8 md:px-0  md:h-28 md:border-b-2 md:border-solid md:border-Lightgrayish-blue mb-3 ">
+        <div class="flex items-center">
+            <div class="humberger flex flex-col gap-1 mr-3 md:hidden">
+                <span class="bg-Darkgrayish-blue w-5 h-1"></span>
+                <span class="bg-Darkgrayish-blue w-5 h-1"></span>
+                <span class="bg-Darkgrayish-blue w-5 h-1"></span>
+            </div>
+            <div class="logo">
+                <h1 class="font-bold text-3xl tracking-tighter text-Verydark-blue">Sneakers</h1>
+            </div>
+            <nav class="opacity-0 lg:block navside z-10 ">
+                <ul class="flex md:items-center nav md:h-28 md:pt-0 pt-28 pl-10 flex-col bg-White md:bg-opacity-0 md:flex-row md:text-base md:font-normal md:text-Grayishblue md:gap-7 md:relative  h-screen text-left gap-5 w-60 absolute left-0 text-2xl top-0 font-medium">
+                    <img src="../images/icon-close.svg" class="h-5 w-5 absolute top-8 left-5 md:hidden close-list cursor-pointer " alt="">
+                  <li>
+                    <a href="#">Collections</a>
+                  </li>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex items-center gap-5">
+        <div class="cart">
+        <p class="bg-Orange text-White items">0</p>
+        <img src="../images/icon-cart.svg" class="cursor-pointer" alt="">
+        <div class="cart-menu bg-White  w-11/12 rounded-lg h-72 mt-10 absolute py-5 left-1/2 transform -translate-x-1/2 duration-500 ease-in-out  hidden">
+            <span class="text-Black text-xl capitalize font-semibold ml-8 ">cart</span>
+            <div class="w-full h-0.5 bg-Darkgrayish-blue mt-5"></div>
+            <p class="absolute py-5 left-1/2 top-2/4 text-Darkgrayish-blue text-xl transform -translate-x-1/2 -translate-y-1/2 mt-7 hidden Your-Cart ">Your Cart Is Empty</p>
+            <div class="box mt-10">
+              <div class="cart_box flex items-center justify-evenly hidden">
+                <img src="../images/image-product-1-thumbnail.jpg" class="rounded-lg h-16" alt="">
+                <p class="text-Darkgrayish-blue text-lg">Fall Limited Edition Sneakers<span class="changed block">0</span></p>
+                <img src="../images/icon-delete.svg" class="delet cursor-pointer" alt="">
+              </div>
+              <div class="button hidden bg-Orange text-White rounded-lg py-3 font-medium text-center text-xl mt-5 w-72 m-auto cursor-pointer ">Checkout</div>
+            </div>
+        </div>
+        </div>
+        <div class="avatar">
+        <img src="../images/image-avatar.png" class="h-7 md:h-10 main-img" alt="">
+        </div>
+        </div>
+    </header>
+      <div class="galery-container flex flex-col  justify-center">
+        <div class="gl_disctop hidden md:block">
+          <div class="w-96 change-img relative">
+            <img src="../images/image-product-1.jpg" class="rounded-lg " alt="">
+          <img src="../images/image-product-2.jpg" class="rounded-lg hidden" alt="">
+          <img src="../images/image-product-3.jpg" class="rounded-lg hidden"  alt="">
+          <img src="../images/image-product-4.jpg" class="rounded-lg hidden"  alt="">
+          </div>
+            <div class="slider flex items-center gap-5 mt-7">
+              <img src="../images/image-product-1-thumbnail.jpg" class="h-20 rounded-lg  youare" alt="">
+              <img src="../images/image-product-2-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+              <img src="../images/image-product-3-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+              <img src="../images/image-product-4-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+            </div>
+            <div class="light-box hidden w-full h-screen flex justify-center items-center flex-col">
+              <img src="../images/icon-close.svg" class="light-box-close" alt="">
+              <div class="w-96 change-img-light relative">
+              <img src="../images/image-product-1.jpg" class="rounded-lg hidden theOne" alt="">
+              <img src="../images/image-product-2.jpg" class="rounded-lg hidden" alt="">
+              <img src="../images/image-product-3.jpg" class="rounded-lg hidden"  alt="">
+              <img src="../images/image-product-4.jpg" class="rounded-lg hidden"  alt="">
+              </div>
+                <div class="slider-thumbnail flex items-center gap-5 mt-7">
+                  <img src="../images/image-product-1-thumbnail.jpg" class="h-20 rounded-lg  youare" alt="">
+                  <img src="../images/image-product-2-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+                  <img src="../images/image-product-3-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+                  <img src="../images/image-product-4-thumbnail.jpg" class="h-20 rounded-lg" alt="">
+                </div>
+                <div class="npx-light flex items-center justify-between w-full top-1/2 absolute transform -translate-y-1/2 ">
+                  <img src="../images/icon-previous.svg" class="p-5  previous-light bg-White ml-3" alt="">
+                  <img src="../images/icon-next.svg" class="p-5  next-light bg-White mr-3" alt="">
+                  </div>
+            </div>
+        </div>
+        <div class="galery flex relative w-full h-96 md:hidden">
+          <img src="../images/image-product-1.jpg" class=" h-96 absolute top-0 left-0 hidden theOne" alt="">
+          <img src="../images/image-product-2.jpg" class=" h-96 absolute top-0 left-0 hidden "  alt="">
+          <img src="../images/image-product-3.jpg" class=" h-96 absolute top-0 left-0 hidden "  alt="">
+          <img src="../images/image-product-4.jpg" class=" h-96 absolute top-0 left-0 hidden "  alt="">
+          <div class="npx flex items-center justify-between w-full top-1/2 absolute transform -translate-y-1/2 ">
+          <img src="../images/icon-previous.svg" class="p-5 cursor-pointer previous bg-White z-50 " alt="">
+          <img src="../images/icon-next.svg" class="p-5 cursor-pointer next mr-5 bg-White z-50" alt="">
+          </div>
+      </div>
+    <div class="discption p-5">
+      <span class="md:block">Sneaker Company</span>
+      <h2 class="text-3xl font-bold titel text-Verydark-blue">Fall Limited Edition <span class="block word">Sneakers</span></h2>
+      <p class=" text-base pargraf font-light">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price flex gap-5 items-start">
+          <h3 class="font-bold text-3xl">$125.00 <p class="ml-auto dollr block">$250.00</p></h3>
+          <span class="font-medium">50%</span>
+        </div>
+        <div class="holder flex flex-col md:flex-row md:items-center ">
+        <div class="count bg-Lightgrayish-blue rounded-lg py-3 flex items-center justify-between px-5">
+            <img src="../images/icon-minus.svg" class="h-1.5 minus" alt="">
+            <span class="text-xl font-bold many">0</span>
+            <img src="../images/icon-plus.svg"  class="h-1.5 plus" alt="">
+          </div>
+          <div class="button Add-to-cart flex items-center justify-center gap-5 bg-Orange rounded-lg py-5"> 
+            <img src="../images/icon-cart.svg " class="text-White"  alt="">
+            <span class="font-semibold capitalize text-base text-White">Add to cart</span>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
